@@ -1,0 +1,236 @@
+[
+  {
+    "level": "error",
+    "message": "Database connection timeout after 30 seconds",
+    "resourceId": "db-primary-01",
+    "timestamp": "2025-01-27T14:45:32Z",
+    "traceId": "trace-2025-001",
+    "spanId": "span-db-001",
+    "commit": "a1b2c3d",
+    "metadata": {
+      "connectionPool": "primary",
+      "timeoutMs": 30000,
+      "retryAttempt": 1,
+      "errorCode": "CONNECTION_TIMEOUT"
+    }
+  },
+  {
+    "level": "warn",
+    "message": "API rate limit approaching threshold",
+    "resourceId": "api-gateway-02",
+    "timestamp": "2025-01-27T14:42:15Z",
+    "traceId": "trace-2025-002",
+    "spanId": "span-api-002",
+    "commit": "a1b2c3d",
+    "metadata": {
+      "currentRequests": 850,
+      "rateLimit": 1000,
+      "windowMs": 60000,
+      "clientId": "client-12345"
+    }
+  },
+  {
+    "level": "info",
+    "message": "User session created successfully",
+    "resourceId": "auth-service-03",
+    "timestamp": "2025-01-27T14:40:08Z",
+    "traceId": "trace-2025-003",
+    "spanId": "span-auth-003",
+    "commit": "a1b2c3d",
+    "metadata": {
+      "userId": "user-98765",
+      "sessionId": "sess-abc123",
+      "loginMethod": "oauth2",
+      "provider": "google"
+    }
+  },
+  {
+    "level": "debug",
+    "message": "Cache hit for product catalog query",
+    "resourceId": "cache-redis-01",
+    "timestamp": "2025-01-27T14:38:45Z",
+    "traceId": "trace-2025-004",
+    "spanId": "span-cache-004",
+    "commit": "a1b2c3d",
+    "metadata": {
+      "cacheKey": "products:category:electronics",
+      "hitRatio": 0.87,
+      "responseTimeMs": 2.3,
+      "ttlRemaining": 1800
+    }
+  },
+  {
+    "level": "error",
+    "message": "Payment webhook validation failed",
+    "resourceId": "payment-webhook-01",
+    "timestamp": "2025-01-27T14:35:22Z",
+    "traceId": "trace-2025-005",
+    "spanId": "span-webhook-005",
+    "commit": "a1b2c3d",
+    "metadata": {
+      "webhookId": "wh_1234567890",
+      "signature": "invalid",
+      "paymentId": "pay_abcdef123",
+      "amount": 149.99,
+      "currency": "USD"
+    }
+  },
+  {
+    "level": "info",
+    "message": "Scheduled backup completed successfully",
+    "resourceId": "backup-service-01",
+    "timestamp": "2025-01-27T14:30:00Z",
+    "traceId": "trace-2025-006",
+    "spanId": "span-backup-006",
+    "commit": "a1b2c3d",
+    "metadata": {
+      "backupType": "incremental",
+      "sizeBytes": 2147483648,
+      "duration": "00:15:32",
+      "destination": "s3://backups/2025/01/27/"
+    }
+  },
+  {
+    "level": "warn",
+    "message": "Memory usage exceeds 90% threshold",
+    "resourceId": "app-server-04",
+    "timestamp": "2025-01-27T14:25:18Z",
+    "traceId": "trace-2025-007",
+    "spanId": "span-memory-007",
+    "commit": "a1b2c3d",
+    "metadata": {
+      "memoryUsagePercent": 92.5,
+      "availableMemoryMB": 512,
+      "totalMemoryMB": 8192,
+      "processCount": 45
+    }
+  },
+  {
+    "level": "debug",
+    "message": "GraphQL query execution completed",
+    "resourceId": "graphql-api-01",
+    "timestamp": "2025-01-27T14:20:55Z",
+    "traceId": "trace-2025-008",
+    "spanId": "span-graphql-008",
+    "commit": "a1b2c3d",
+    "metadata": {
+      "query": "getUserProfile",
+      "executionTimeMs": 45.2,
+      "complexity": 12,
+      "cacheHit": false
+    }
+  },
+  {
+    "level": "info",
+    "message": "File upload processed successfully",
+    "resourceId": "file-service-02",
+    "timestamp": "2025-01-27T14:15:33Z",
+    "traceId": "trace-2025-009",
+    "spanId": "span-upload-009",
+    "commit": "a1b2c3d",
+    "metadata": {
+      "fileName": "document.pdf",
+      "fileSizeBytes": 1048576,
+      "uploadDuration": "00:00:03",
+      "virusScanResult": "clean"
+    }
+  },
+  {
+    "level": "error",
+    "message": "External API service unavailable",
+    "resourceId": "integration-service-01",
+    "timestamp": "2025-01-27T14:10:12Z",
+    "traceId": "trace-2025-010",
+    "spanId": "span-integration-010",
+    "commit": "a1b2c3d",
+    "metadata": {
+      "externalService": "payment-processor",
+      "httpStatus": 503,
+      "retryAfter": 300,
+      "circuitBreakerState": "open"
+    }
+  },
+  {
+    "level": "error",
+    "message": "Failed to connect to database server",
+    "resourceId": "server-1234",
+    "timestamp": "2023-09-15T08:00:00Z",
+    "traceId": "abc-xyz-123",
+    "spanId": "span-456",
+    "commit": "5e5342f",
+    "metadata": {
+      "parentResourceId": "server-5678",
+      "errorCode": "DB_CONNECTION_FAILED",
+      "retryCount": 3
+    }
+  },
+  {
+    "level": "warn",
+    "message": "High memory usage detected",
+    "resourceId": "server-5678",
+    "timestamp": "2023-09-15T08:05:00Z",
+    "traceId": "def-uvw-456",
+    "spanId": "span-789",
+    "commit": "5e5342f",
+    "metadata": {
+      "memoryUsage": "85%",
+      "threshold": "80%"
+    }
+  },
+  {
+    "level": "info",
+    "message": "User authentication successful",
+    "resourceId": "auth-service-01",
+    "timestamp": "2023-09-15T08:10:00Z",
+    "traceId": "ghi-rst-789",
+    "spanId": "span-012",
+    "commit": "7a8b9c2",
+    "metadata": {
+      "userId": "user-12345",
+      "sessionId": "sess-67890"
+    }
+  },
+  {
+    "level": "debug",
+    "message": "Cache miss for user profile data",
+    "resourceId": "cache-service-02",
+    "timestamp": "2023-09-15T08:15:00Z",
+    "traceId": "jkl-opq-012",
+    "spanId": "span-345",
+    "commit": "7a8b9c2",
+    "metadata": {
+      "cacheKey": "user:profile:12345",
+      "ttl": 3600
+    }
+  },
+  {
+    "level": "error",
+    "message": "Payment processing failed",
+    "resourceId": "payment-gateway-03",
+    "timestamp": "2023-09-15T08:20:00Z",
+    "traceId": "mno-tuv-345",
+    "spanId": "span-678",
+    "commit": "9d1e2f4",
+    "metadata": {
+      "paymentId": "pay-98765",
+      "amount": 99.99,
+      "currency": "USD",
+      "errorCode": "INSUFFICIENT_FUNDS"
+    }
+  },
+  {
+    "level": "info",
+    "message": "API request processed successfully",
+    "resourceId": "api-gateway-01",
+    "timestamp": "2023-09-15T08:25:00Z",
+    "traceId": "pqr-wxy-678",
+    "spanId": "span-901",
+    "commit": "9d1e2f4",
+    "metadata": {
+      "endpoint": "/api/v1/users",
+      "method": "GET",
+      "responseTime": 150,
+      "statusCode": 200
+    }
+  }
+]
